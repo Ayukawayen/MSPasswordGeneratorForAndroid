@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MS Password Generator</string>
+    <string name="tileTitle">Generate Password</string>
+
+    <string name="masterKey">Master Key</string>
+    <string name="siteKey">Site Key</string>
+
+    <string name="clickHint">Click to copy &amp; close</string>
+    <string name="lengthHint">Length: 16</string>
+
+    <string name="prefKey">net.ayukawayen.strongpasswordgenerator.pref</string>
+    <string name="toastTextCopied">Password copied</string>
+</resources>

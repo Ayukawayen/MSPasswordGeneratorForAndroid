@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff333333"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:theme="@style/DialogTheme">
+
+    <EditText
+        android:id="@+id/editTextMasterKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="@string/masterKey"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextSiteKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="@string/siteKey"
+        android:inputType="textVisiblePassword|text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80CCCCFF"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewClickHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/clickHint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewLengthHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lengthHint" />
+
+        <SeekBar
+            android:id="@+id/seekBarLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="28"
+            android:min="4"
+            android:progress="16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="0-9"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLowercase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="a-z"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/checkBoxUppercase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="A-Z"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="._"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
